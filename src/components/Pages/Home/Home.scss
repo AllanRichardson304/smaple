@@ -221,7 +221,7 @@
         padding: 2.2rem 2.2rem 0 ;
         position: relative;
         height:calc(100vh - 15.4rem);
-        overflow-y: auto;
+      
     }
     &__send-mail{
       border-radius: 2rem;
@@ -260,7 +260,6 @@
         justify-content: flex-end;
     }
     &__mail-update{
-    
      background-color: var(--white);
      position: absolute;
      bottom: 1rem;
@@ -270,6 +269,16 @@
     }
     &__mail-inner{
         padding: 1.2rem;
+    }
+    &__box-content{
+     display: flex;
+     flex-direction: column;
+     gap: 1.5rem;
+     overflow-y: auto;
+     height: 45rem;
+    }
+       &__box-content::-webkit-scrollbar {
+        display: none;
     }
     &__to-content{
         padding: 1.2rem 1.2rem 1.2rem 0;
@@ -356,7 +365,7 @@
             text-align: center;
             border-radius: 5rem;
             position: absolute;
-            bottom: 43%;
+            bottom: 40%;
             left: 2rem;
         }
         &__profile-chat{
@@ -378,6 +387,18 @@
             top: 1rem;
             z-index: 100;
         }
+        &__box-content{
+            height: 30rem;
+           }
+            
     }  
 
+}
+
+@media (min-width:1025px) and (max-width:1680px) {
+    .home{
+    &__box-content{
+        height: 30rem;
+       }
+    }
 }

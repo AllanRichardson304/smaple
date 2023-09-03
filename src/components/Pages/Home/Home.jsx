@@ -170,6 +170,7 @@ export default function Home() {
               </div>
             </div>
             <div className='home__main-content'>
+              <div className='home__box-content'>
               <div className='home__send-mail'>
                 <div className='home__from'>
                   <p>From:</p>
@@ -186,8 +187,26 @@ export default function Home() {
                   4:58 PM
                 </div>
               </div>
+              <div className='home__send-mail'>
+                <div className='home__from'>
+                  <p>From:</p>
+                  <h6>ruby123@gmail.com</h6>
+                </div>
+                <div className='home__from'>
+                  <p>Subject:</p>
+                  <h6>Payment Issue</h6>
+                </div>
+                <div className='home__from'>
+                  <h6>Hello sir, <br></br> I hope this email finds you well. I am writing to provide you with a comprehensive analysis of the [Product Name] based on our research and evaluation. This analysis aims to assist in making informed decisions regarding the product's viability, market potential, and strategic implications. Here are the key findings from our analysis. <br />Thanking You.</h6>
+                </div>
+                <div className='home__time'>
+                  4:58 PM
+                </div>
+              </div>
+              </div>
+              
              
-              <div>
+              <div className='home__fixed-content'>
                 <div className='home__mail-update'>
                   <div className='home__mail-inner'>
                     <div className='home__to-content'>
@@ -255,7 +274,6 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-
               </div>
 
             </div>

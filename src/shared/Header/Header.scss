@@ -185,7 +185,9 @@
             margin-left: 1rem;
             margin-right: 1rem;
         }
+     
         }
+
 }
 @media (min-width:320px) and (max-width:530px) {
     .header{
@@ -219,6 +221,9 @@
         &__tab-bg{
             left: 12rem
         }
+        &__col-two{
+            padding-right: 0.5rem;
+         }
         }
 }
 
@@ -254,6 +259,9 @@
         &__tab-bg{
             left: 12rem
         }
+        &__col-two{
+            padding-right: 0.5rem;
+         }
         }
 }
 @media (min-width:601px) and (max-width:683px) {
@@ -288,6 +296,7 @@
         &__tab-bg{
             left: 11rem;
         }
+        
         }
 }
 @media (min-width:689px) and (max-width:1024px) {
