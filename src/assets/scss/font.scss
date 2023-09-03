@@ -1,0 +1,26 @@
+@font-face {
+    font-family: "Intern-Regular";
+    src: url("../fonts/Inter-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Inter-Medium";
+    src: url("../fonts/Inter-Medium.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Intern-SemiBold";
+    src: url("../fonts/Inter-SemiBold.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Intern-Bold";
+    src: url("../fonts/Inter-Bold.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Intern-Thin";
+    src: url("../fonts/Inter-Thin.ttf") format("truetype");
+}
+
+$font-Bold:"Inter-Bold";
+$font-Medium:"Inter-Medium";
+$font-SemiBold:"Inter-SemiBold";
+$font-Regular:"Inter-Regular";
+$font-Thin:"Inter-Thin";

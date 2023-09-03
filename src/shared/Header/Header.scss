@@ -1,0 +1,305 @@
+@import "../../assets/scss/font.scss";
+.header {
+    height: 6.8rem;
+    border-bottom: 0.1rem solid var(--border);
+    background-color: var(--white);
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    &__col-one {
+        display: flex;
+        height: 5.6rem;
+        position: absolute;
+        bottom: 0;
+    }
+    &__tab{
+        display: flex;
+        background: var(--body);
+    }
+    &__tab-active {
+        background: var(--white);
+        padding: 0rem 2rem;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        border-radius:  0 0 0 1.2rem;
+        img {
+            width: 3rem;
+        }
+        p {
+            font-size: 1.4rem;
+            font-family: $font-Medium;
+            line-height: 2.2rem;
+            margin: 0;
+            span {
+                color: var(--primary-color);
+                font-size: 1.2rem;
+                font-family: $font-Medium;
+            }
+        }
+        h5 {
+            color: var(--gray-color);
+            font-size: 1.2rem;
+            margin: 0;
+        }
+        h6 {
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            font-family: $font-Medium;
+        }
+    }
+    &__acitve-inner{
+        display: flex;
+    }
+    &__tab-inactive {
+        background: var(--body);
+        padding: 0rem 2rem;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        border-radius: 0 1.2rem 0 0;
+        z-index: 100;
+        
+        img {
+            width: 3rem;
+        }
+        p {
+            font-size: 1.4rem;
+            font-family: $font-Medium;
+            line-height: 2.2rem;
+            margin: 0;
+
+
+            span {
+                color: var(--primary-color);
+                font-size: 1.2rem;
+                font-family: $font-Medium;
+            }
+        }
+        h5 {
+            color: var(--gray-color);
+            font-size: 1.2rem;
+            margin: 0;
+        }
+     
+    }
+    &__tab-bg{
+        background-color: var(--white);
+        padding: 0.5rem;
+        height: 3rem;
+        width: 3rem;
+        position: absolute;
+        left: 21rem;
+    }
+    &__col-two{
+       position: absolute;
+       right: 0;
+       display: flex;
+       align-items: center;
+       height: 6.8rem;
+       gap: 1rem;
+       padding-right: 1.6rem;
+    }
+    &__theme-set{
+        display: flex;
+        gap: 1rem;
+        height: 4rem;
+        padding-right: 1rem;
+        align-items: center;
+        border-right: 0.1rem solid var(--border);
+    }
+    &__profile-content{
+        display: flex;
+        gap: 1rem;
+    }
+    &__profile{
+        background-color:var(--orange-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 2.8rem;
+        width: 2.8rem;
+        border-radius:  0 0.8rem  0  0.8rem ;
+        cursor: pointer;
+        h1{
+            margin: 0;
+            font-family: $font-Medium;
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: var(--white);
+           
+        }
+    }
+    &__menu{
+        display: none
+    }
+}
+.sidebar-responsive{
+   
+    background: var(--sidebar);
+    &__logo{
+        padding: 1.6rem 1.8rem;
+       background-color: transparent;
+       display: flex;
+       justify-content: center;
+       text-align: center;
+       img{
+       background-color: var(--sidebar);
+       }
+    }
+    &__menu-list{
+        margin-top: 1.8rem;
+        background-color: var(--sidebar);
+        justify-content: center;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        gap: 3.2rem;
+    }
+    &__menu-inner{
+        background-color: var(--sidebar);
+        img{
+            height: 2.4rem;
+            width: 2.4rem;
+            background-color: var(--sidebar);
+            cursor: pointer;
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .header{
+        &__menu{
+            display: block
+        }
+        }
+  }
+
+  @media (min-width:320px) and (max-width:900px) {
+    .header{
+        &__menu{
+            display: block;
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
+        }
+}
+@media (min-width:320px) and (max-width:530px) {
+    .header{
+        &__menu{
+            display: block;
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
+        &__tab-inactive{
+            p{
+                display: none;
+            }
+            h6{
+                display: none;
+            }
+            h5{
+                display: none;
+            }
+        }
+        &__tab-active{
+            p{
+                display: none;
+            }
+            h6{
+                display: none;
+            }
+            h5{
+                display: none;
+            }
+        }
+        &__tab-bg{
+            left: 12rem
+        }
+        }
+}
+
+@media (min-width:531px) and (max-width:600px) {
+    .header{
+        &__menu{
+            display: block;
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
+        &__tab-inactive{
+            p{
+                display: none;
+            }
+            h6{
+                display: none;
+            }
+            h5{
+                display: none;
+            }
+        }
+        &__tab-active{
+            p{
+                display: none;
+            }
+            h6{
+                display: none;
+            }
+            h5{
+                display: none;
+            }
+        }
+        &__tab-bg{
+            left: 12rem
+        }
+        }
+}
+@media (min-width:601px) and (max-width:683px) {
+    .header{
+        &__menu{
+            display: block;
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
+        &__tab-inactive{
+            p{
+                display: none;
+            }
+            h6{
+                display: none;
+            }
+            h5{
+                display: none;
+            }
+        }
+        &__tab-active{
+            p{
+                display: none;
+            }
+            h6{
+                display: none;
+            }
+            h5{
+                display: none;
+            }
+        }
+        &__tab-bg{
+            left: 11rem;
+        }
+        }
+}
+@media (min-width:689px) and (max-width:1024px) {
+    .header{
+        &__menu{
+            display: block;
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
+       
+        &__tab-bg{
+            left: 26rem;
+        }
+        }
+}

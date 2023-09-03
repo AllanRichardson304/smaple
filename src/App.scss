@@ -1,0 +1,109 @@
+@import './assets/scss/font.scss';
+@import './assets/scss/variables.scss';
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body{
+  background-color: var(--body);
+}
+
+.cursor{
+  cursor: pointer;
+}
+
+:where(.css-dev-only-do-not-override-10ed4xt).ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color:var(--primary-color);
+  font-size: 1.4rem;
+  font-family: $font-Medium;
+  font-weight: 400;
+}
+:where(.css-dev-only-do-not-override-10ed4xt).ant-tabs .ant-tabs-tab {
+  color: #757676;
+  font-size: 1.4rem;
+  font-family: $font-Medium;
+  font-weight: 400;
+
+}
+:where(.css-dev-only-do-not-override-10ed4xt).ant-tabs .ant-tabs-tab:hover {
+  color: #757676;
+  font-size: 1.4rem;
+  font-family: $font-Medium;
+  font-weight: 400;
+
+}
+
+:where(.css-dev-only-do-not-override-10ed4xt).ant-tabs .ant-tabs-ink-bar {
+  position: absolute;
+  background: var(--primary-color) ;
+  pointer-events: none;
+}
+.ant-tabs-ink-bar .ant-tabs-ink-bar-animated{
+  height: 0.4rem;
+
+}
+.ant-tabs >.ant-tabs-nav .ant-tabs-nav-wrap{
+  height: 6.8rem;
+  background-color: var(--white);
+
+}
+:where(.css-dev-only-do-not-override-10ed4xt).ant-tabs-top >.ant-tabs-nav .ant-tabs-ink-bar{
+  height: 0.3rem;
+}
+:where(.css-dev-only-do-not-override-10ed4xt).ant-tabs .ant-tabs-tab {
+width: auto;
+display: flex;
+justify-content: space-evenly;
+width: 15rem;
+}
+.ant-tabs {
+  background-color: var(--white);
+  border-right: 0.1rem solid var(--border)
+}
+:where(.css-dev-only-do-not-override-10ed4xt).ant-tabs-top >.ant-tabs-nav::before{
+  border-bottom: 0.1rem solid var(--border);
+  z-index: 100; 
+}
+:where(.css-dev-only-do-not-override-10ed4xt).ant-switch.ant-switch-checked {
+  background: var(--primary-color) ;
+}
+:where(.css-dev-only-do-not-override-10ed4xt).ant-switch.ant-switch-checked:hover:not(.ant-switch-disabled) {
+  background: var(--primary-color) ;
+}
+.ant-form-item{
+  margin-bottom: 0;
+}
+:where(.css-dev-only-do-not-override-10ed4xt).ant-input:focus, :where(.css-dev-only-do-not-override-10ed4xt).ant-input-focused {
+  border:none;
+  box-shadow: none;
+}
+:where(.css-dev-only-do-not-override-10ed4xt).ant-select:not(.ant-select-disabled):not(.ant-select-customize-input):not(.ant-pagination-size-changer):hover .ant-select-selector {
+  border-color:var(--border);
+}
+.ant-select{
+  width: 12rem;
+  background-color: var(--white);
+}
+.ant-select-single .ant-select-selector{
+  font-family: $font-Medium;
+}
+
+:where(.css-dev-only-do-not-override-10ed4xt).ant-drawer .ant-drawer-body {
+    padding: 0;
+  background-color: var(--sidebar);
+
+  }
+
+  .ant-drawer-header{
+  background-color: var(--sidebar);
+  }
+  .ant-drawer-close{
+   display: none !important;
+  }
+  .ant-drawer-header{
+    padding: 0 !important;
+  }
