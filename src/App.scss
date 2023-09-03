@@ -15,91 +15,89 @@ body{
 .cursor{
   cursor: pointer;
 }
-
-:where(.css-dev-only-do-not-override-10ed4xt).ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
-  color:var(--primary-color);
-  font-size: 1.4rem;
-  font-family: $font-Medium;
-  font-weight: 400;
+.ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color:var(--primary-color) !important;
+  font-size: 1.4rem !important;
+  font-family: $font-Medium !important;
+  font-weight: 400 !important;
 }
-:where(.css-dev-only-do-not-override-10ed4xt).ant-tabs .ant-tabs-tab {
-  color: #757676;
-  font-size: 1.4rem;
-  font-family: $font-Medium;
-  font-weight: 400;
-
-}
-:where(.css-dev-only-do-not-override-10ed4xt).ant-tabs .ant-tabs-tab:hover {
-  color: #757676;
-  font-size: 1.4rem;
-  font-family: $font-Medium;
-  font-weight: 400;
+.ant-tabs .ant-tabs-tab {
+  color: #757676 !important;
+  font-size: 1.4rem !important;
+  font-family: $font-Medium !important;
+  font-weight: 400 !important;
 
 }
+.ant-tabs .ant-tabs-tab:hover {
+  color: #757676 !important;
+  font-size: 1.4rem !important;
+  font-family: $font-Medium !important;
+  font-weight: 400 !important;
+}
 
-:where(.css-dev-only-do-not-override-10ed4xt).ant-tabs .ant-tabs-ink-bar {
-  position: absolute;
-  background: var(--primary-color) ;
-  pointer-events: none;
+.ant-tabs .ant-tabs-ink-bar {
+  position: absolute  !important;
+  background: var(--primary-color) !important ;
+  pointer-events: none !important ;
 }
 .ant-tabs-ink-bar .ant-tabs-ink-bar-animated{
-  height: 0.4rem;
+  height: 0.4rem !important ;
 
 }
 .ant-tabs >.ant-tabs-nav .ant-tabs-nav-wrap{
-  height: 6.8rem;
-  background-color: var(--white);
+  height: 6.8rem !important ;
+  background-color: var(--white) !important ;
 
 }
-:where(.css-dev-only-do-not-override-10ed4xt).ant-tabs-top >.ant-tabs-nav .ant-tabs-ink-bar{
-  height: 0.3rem;
+.ant-tabs-nav .ant-tabs-ink-bar{
+  height: 0.3rem !important ;
 }
-:where(.css-dev-only-do-not-override-10ed4xt).ant-tabs .ant-tabs-tab {
-width: auto;
-display: flex;
-justify-content: space-evenly;
-width: 15rem;
+.ant-tabs .ant-tabs-tab {
+width: auto !important ;
+display: flex !important ;
+justify-content: space-evenly !important ;
+width: 15rem !important ;
 }
 .ant-tabs {
-  background-color: var(--white);
-  border-right: 0.1rem solid var(--border)
+  background-color: var(--white) !important ;
+  border-right: 0.1rem solid var(--border)!important ;
 }
-:where(.css-dev-only-do-not-override-10ed4xt).ant-tabs-top >.ant-tabs-nav::before{
-  border-bottom: 0.1rem solid var(--border);
+.ant-tabs-nav::before{
+  border-bottom: 0.1rem solid var(--border) !important ;
   z-index: 100; 
 }
-:where(.css-dev-only-do-not-override-10ed4xt).ant-switch.ant-switch-checked {
-  background: var(--primary-color) ;
+.ant-switch.ant-switch-checked {
+  background: var(--primary-color) !important  ;
 }
-:where(.css-dev-only-do-not-override-10ed4xt).ant-switch.ant-switch-checked:hover:not(.ant-switch-disabled) {
-  background: var(--primary-color) ;
+.ant-switch.ant-switch-checked:hover:not(.ant-switch-disabled) {
+  background: var(--primary-color)  !important ;
 }
 .ant-form-item{
-  margin-bottom: 0;
+  margin-bottom: 0 !important ;
 }
-:where(.css-dev-only-do-not-override-10ed4xt).ant-input:focus, :where(.css-dev-only-do-not-override-10ed4xt).ant-input-focused {
-  border:none;
-  box-shadow: none;
+.ant-input:focus, :where(.css-dev-only-do-not-override-10ed4xt).ant-input-focused {
+  border:none !important ;
+  box-shadow: none !important ;
 }
-:where(.css-dev-only-do-not-override-10ed4xt).ant-select:not(.ant-select-disabled):not(.ant-select-customize-input):not(.ant-pagination-size-changer):hover .ant-select-selector {
-  border-color:var(--border);
+.ant-select:not(.ant-select-disabled):not(.ant-select-customize-input):not(.ant-pagination-size-changer):hover .ant-select-selector {
+  border-color:var(--border) !important ;
 }
 .ant-select{
-  width: 12rem;
-  background-color: var(--white);
+  width: 12rem !important ;
+  background-color: var(--white) !important ;
 }
 .ant-select-single .ant-select-selector{
-  font-family: $font-Medium;
+  font-family: $font-Medium !important ;
 }
 
-:where(.css-dev-only-do-not-override-10ed4xt).ant-drawer .ant-drawer-body {
-    padding: 0;
-  background-color: var(--sidebar);
+.ant-drawer .ant-drawer-body {
+    padding: 0 !important ;
+  background-color: var(--sidebar) !important ;
 
   }
 
   .ant-drawer-header{
-  background-color: var(--sidebar);
+  background-color: var(--sidebar) !important ;
   }
   .ant-drawer-close{
    display: none !important;
