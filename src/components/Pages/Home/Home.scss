@@ -395,10 +395,17 @@
 
 }
 
-@media (min-width:1025px) and (max-width:1680px) {
+@media (min-width:1025px) and (max-width:1339px) {
     .home{
     &__box-content{
         height: 30rem;
+       }
+    }
+}
+@media (min-width:1440px) and (max-width:1680px) {
+    .home{
+    &__box-content{
+        height: 26rem;
        }
     }
 }
